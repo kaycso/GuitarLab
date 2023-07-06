@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Lab | Contact</title>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header id="navigation">
+        <a class="logo" href="">
+            <img src="../assets/GLabLogo.svg" alt="Logo Guitar Lab">
+        </a>
+        <nav class="menu-desktop">
+            <ul class="menu">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-responsive">
+            <button id="open-menu" aria-label="Abrir Menu" onclick="openMenu()"><img src="../assets/icons/open-menu.svg" alt=""></button>
+            <ul id="menu" class="menu">
+                <button id="close-menu" aria-label="Abrir Menu" onclick="closeMenu()"><img src="../assets/icons/close-menu.svg" alt=""></button>
+                <div class="menu-content">
+                    <span class="border"></span>
+                    <li><a onclick="closeMenu()" href="./home.html">Home</a></li>
+                    <span class="border"></span>
+                    <li><a onclick="closeMenu()" href="./about.html">Sobre</a></li>
+                    <span class="border"></span>
+                    <li><a onclick="closeMenu()" href="./contact.html">Contato</a></li>
+                    <span class="border"></span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="contactLinks">
+                <h3>Links de Contato</h3>
+                <div class="contact-content-container">
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/whatsapp.svg" alt="">
+                        <p>whatsapp.com/GuitarLab</p>
+                    </a>
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/facebook.svg" alt="">
+                        <p>facebook.com/GuitarLab</p>
+                    </a>
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/instagram.svg" alt="">
+                        <p>instagram.com/GuitarLab</p>
+                    </a>
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/linkedin.svg" alt="">
+                        <p>linkedin.com/GuitarLab</p>
+                    </a>
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/youtube.svg" alt="">
+                        <p>youtube.com/GuitarLab</p>
+                    </a>
+                </div>
+                <span class="divisor"></span>
+                <div class="contact-content-container">
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/email.svg" alt="">
+                        <p>guitarlab@email.com</p>
+                    </a>
+                    <a href="" class="contact-content">
+                        <img src="../assets/icons/location.svg" alt="">
+                        <p>avenida fictícia, 3</p>
+                    </a>
+                </div>
+            </section>
+    
+            <section id="form">
+                <span class="divisor"></span>
+                <div class="title">
+                    <h2>Envie uma Mensagem!</h2>
+                    <p>Basta preencher o formulário abaixo.</p>
+                </div>
+                <form action="">
+                    <div class="form-content">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome Completo">
+                    </div>
+                    <div class="form-content">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="email@email.com">
+                    </div>
+                    <div class="form-content">
+                        <label for="msg">Mensagem</label>
+                        <textarea name="msg" id="msg" cols="" rows="" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>©Kayc. Alguns direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/kaycso" target="_blank"><img src="../assets/icons/github.svg" alt="icone do github"></a>
+            <a href="https://www.linkedin.com/in/kayc-oliveira-3b6456234/" target="_blank"><img src="../assets/icons/linkedin.svg" alt="icone do linkedin"></a>
+        </div>
+    </footer>
+    <script src="../script/menu.js"></script>
+</body>
+</html>

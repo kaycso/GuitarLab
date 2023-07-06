@@ -1,0 +1,178 @@
+@import url("./generalStyles.css");
+
+body {
+    font-family: 'montserrat', sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    display: grid;
+}
+
+.container {
+    margin-block: 110px;
+    display: flex;
+    padding: 30px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    justify-content: center;
+    justify-self: center;
+    gap: 60px;
+    margin-inline: 20px;
+    
+}
+
+#contactLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactLinks h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+#contactLinks .contact-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactLinks .contact-content-container .contact-content {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#contactLinks .contact-content-container .contact-content img {
+    width: 20px;
+}
+
+#contactLinks .contact-content-container .contact-content p {
+    color: var(--text-color-2);
+    font-size: 14px;
+}
+
+#contactLinks .divisor {
+    width: 180px;
+    height: 1px;
+    background-color: var(--background-color-2);
+    border-radius: 1px;
+    margin-block: 20px;
+}
+
+/* ===== Section Form ============================================ */
+#form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#form span {
+    height: 400px;
+    width: 1px;
+    display: block;
+    background-color: var(--background-color-2);
+    position: absolute;
+    left: -10px;
+    border-radius: 1px;
+}
+
+#form .title h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+#form .title p {
+    color: var(--text-color-3);
+    font-size: 14px;
+}
+
+#form form {
+    display: grid;
+    gap: 20px;
+}
+
+#form .form-content {
+    display: grid;
+    gap: 5px;
+}
+
+#form .form-content label {
+    color: var(--text-color-1);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#form .form-content input,
+#form .form-content textarea {
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color-body);
+    color: #fff;
+}
+
+#form .form-content input:-webkit-autofill,
+#form .form-content textarea:-webkit-autofill
+#form .form-content input:-webkit-autofill:hover,
+#form .form-content textarea:-webkit-autofill:hover
+#form .form-content input:-webkit-autofill:focus,
+#form .form-content textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 100px var(--background-color-body) inset;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+#form .form-content textarea {
+    min-height: 180px;
+    resize: none;
+}
+
+#form form button {
+    padding: 6px 12px;
+    background-image: var(--gradient);
+    border: none;
+    font-size: 16px;
+    justify-self: center;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #form .divisor {
+        /* rotate: 90deg; */
+        left: 0px;
+        bottom: -30px;
+        width: 100%;
+        height: 1px;
+    }
+
+    #contactLinks h3 {
+        text-align: center;
+    }
+
+    #contactLinks .divisor {
+        width: 100%;
+    }
+
+    /* footer */
+    footer {
+        position: relative;
+    }
+}

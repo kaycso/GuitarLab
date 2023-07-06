@@ -1,0 +1,168 @@
+@import url("./generalStyles.css");
+
+body {
+    background-color: var(--background-color-body);
+    font-family: "montserrat", sans-serif;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    gap: 60px;
+}
+
+.container-content {
+    background-color: var(--background-color);
+    display: grid;
+    width: 520px;
+    padding: 55px;
+    gap: 40px;
+    border-radius: 30px;
+}
+
+
+.header h2 {
+    color: var(--text-color-1);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.header h1 {
+    font-size: 36px;
+    line-height: 36px;
+    color: transparent;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.header {
+    text-align: center;
+    display: grid;
+    gap: 5px;
+}
+
+form {
+    display: grid;
+    width: 100%;
+    gap: 32px;
+}
+
+form .content-form {
+    display: grid;
+    gap: 16px;
+}
+
+form .content-form input:-webkit-autofill,
+form .content-form input:-webkit-autofill:hover,
+form .content-form input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 100px var(--background-color) inset;
+    -webkit-text-fill-color: var(--text-color-2) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+form .content-form input {
+    border: none;
+    border-bottom: 1px solid var(--text-color-2);
+    background-color: transparent;
+    outline: none;
+    color: var(--text-color-2);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+form .content-form a {
+    color: var(--text-color-3);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+form button {
+    padding: 12px 24px;
+    justify-self: center;
+    border-radius: 10px;
+    border: none;
+    background-image: var(--gradient);
+    color: var(--background-color);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.singUp {
+    display: grid;
+    text-align: center;
+    font-size: 14px;
+    gap: 5px;
+    justify-self: center;
+}
+
+.singUp p {
+    color: var(--text-color-3);
+    font-weight: 500;
+}
+
+.singUp a {
+    color: var(--text-color-2);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media (max-width: 1150px) {
+    .ilustration {
+        display: none;
+    }
+}
+
+@media  (max-width: 600px) {
+    main {
+        padding: 30px;
+        max-width: 320px;
+        gap: 30px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    form .content-form {
+        gap: 10px;
+    }
+
+    form .content-form input {
+        font-size: 14px;
+    }
+
+    form .content-form a {
+        font-size: 12px;
+    }
+
+    form button {
+        margin-top: 10px;
+    }
+
+    .singUp p,
+    .singUp a {
+        font-size: 12px;
+    }
+}

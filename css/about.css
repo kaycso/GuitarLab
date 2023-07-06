@@ -1,0 +1,164 @@
+@import url("./generalStyles.css");
+
+
+body {
+    font-family: "montserrat", sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    padding-inline: 20px;
+    padding-block: 110px;
+}
+
+section {
+    max-width: 760px;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+/* ======= Section Project ========================== */
+#project {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+#project p {
+    color: var(--text-color-1);
+    font-size: 20px;
+}
+
+#project p span {
+    font-weight: 700;
+    color: inherit;
+}
+
+#project p .project-name {
+    color: transparent;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* ======= Section Developer =========================== */
+#developer {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+#developer .content-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#developer .content-container .content-img img {
+    width: 180px;
+}
+
+#developer .content-container .content {
+    display: grid;
+    gap: 20px;
+}
+
+#developer .content-container .content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+#developer .content-container .content p {
+    font-size: 16px;
+    color: var(--text-color-1);
+}
+
+#developer .content-container .content p span {
+    color: inherit;
+    font-weight: 700;
+}
+
+#developer .content-container .content .content-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#developer .content-container .content .content-links a {
+    padding: 6px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    background-image: var(--gradient);
+    border-radius: 5px;
+}
+
+#developer .content-container .content .content-links .social {
+    display: flex;
+    gap: 10px;
+}
+
+#developer .content-container .content .content-links .social img {
+    width: 24px;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 650px) {
+    section h2 {
+        font-size: 32px;
+    }
+
+    #developer {
+        gap: 24px;
+    }
+
+    #developer .content-container {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #developer .content-container .content {
+        justify-items: center;
+        gap: 20px;
+    }
+
+    #developer .content-container .content h3 {
+        font-size: 20px;
+    }
+    
+    #developer .content-container .content p {
+        font-size: 14px;
+    }
+
+    #developer .content-container .content .content-links {
+        display: grid;
+        justify-items: center;
+        gap: 15px;
+    }
+
+    /* footer */
+    footer {
+        position: relative;
+    }
+}

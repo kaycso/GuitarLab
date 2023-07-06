@@ -1,81 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula HTML</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Login | Guitar Lab</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header id="navigation">
-        <a class="logo" href="">LOGO</a>
-        <nav class="menu-desktop">
-            <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="menu-responsive">
-            <button id="open-menu" aria-label="Abrir Menu" onclick="openMenu()"><img src="./assets/icons/open-menu.svg" alt=""></button>
-            <ul id="menu" class="menu">
-                <button id="close-menu" aria-label="Abrir Menu" onclick="closeMenu()"><img src="./assets/icons/close-menu.svg" alt=""></button>
-                <div class="menu-content">
-                    <span class="border"></span>
-                    <li><a onclick="closeMenu()" href="">Home</a></li>
-                    <span class="border"></span>
-                    <li><a onclick="closeMenu()" href="">About</a></li>
-                    <span class="border"></span>
-                    <li><a onclick="closeMenu()" href="">Contact</a></li>
-                    <span class="border"></span>
+    <main>
+        <div class="container">
+            <div class="ilustration">
+                <img src="./assets/ilustration/ilustracao.svg" alt="">
+            </div>
+            <div class="container-content">
+                <div class="header">
+                    <h2>welcome to the</h2>
+                    <h1>GuitarLab</h1>
                 </div>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="cards">
-        <div class="card">
-            <div class="content-column-a">
-                <h2>Guitarra Lp</h2>
-                <p>(DESCRIÇÃO) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam, quaerat provident perferendis velit a assumenda veritatis ipsum saepe debitis rerum natus nisi magni facere cumque recusandae, neque ipsam corporis.</p>
-                <a href="#">Botao</a>
-            </div>
-            <div class="content-column-b">
-                <img src="./assets/instruments/lespaul.jpg" alt="imagem de uma guitarra lespaul de cor bege">
-            </div>
-        </div>
-        <div class="card">
-            <div class="content-column-a">
-                <h2>Guitarra St</h2>
-                <p>(DESCRIÇÃO) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam, quaerat provident perferendis velit a assumenda veritatis ipsum saepe debitis rerum natus nisi magni facere cumque recusandae, neque ipsam corporis.</p>
-                <a href="#">Botao</a>
-            </div>
-            <div class="content-column-b">
-                <img src="./assets/instruments/stratocaster.jpg" alt="imagem de uma guitarra stratocaster de cor de madeira">
+                <form action="./content/home.html">
+                    <div class="content-form">
+                        <input type="text" id="user" name="user" placeholder="Usuário" required>
+                    </div>
+                    <div class="content-form">
+                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                        <a class="forget-password" href="">Esqueceu sua senha?</a>
+                    </div>
+                    <button type="submit">login</button>
+                </form>
+                <div class="singUp">
+                    <p>Não possui cadastro?</p>
+                    <a class="button-signUp" href="">Crie sua conta</a>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="content-column-a">
-                <h2>Violão Nylon</h2>
-                <p>(DESCRIÇÃO) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam, quaerat provident perferendis velit a assumenda veritatis ipsum saepe debitis rerum natus nisi magni facere cumque recusandae, neque ipsam corporis.</p>
-                <a href="#">Botao</a>
-            </div>
-            <div class="content-column-b">
-                <img src="./assets/instruments/violao.jpg" alt="imagem de um violão de nylon">
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>©Copyright by Kayc</p>
-        <div class="social-links">
-            <a href="https://github.com/kaycso" target="_blank"><img src="./assets/icons/github.svg" alt="icone do github"></a>
-            <a href="https://www.linkedin.com/in/kayc-oliveira-3b6456234/" target="_blank"><img src="./assets/icons/linkedin.svg" alt="icone do linkedin"></a>
-            <a href="https://www.instagram.com/kaycso/" target="_blank"><img src="./assets/icons/instagram.svg" alt="icone do instagram"></a>
-        </div>
-    </footer>
-
-    <script src="./main.js"></script>
+    </main>
 </body>
 </html>

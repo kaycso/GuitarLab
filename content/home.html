@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Lab</title>
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header id="navigation">
+        <a class="logo" href="">
+            <img src="../assets/GLabLogo.svg" alt="Logo Guitar Lab">
+        </a>
+        <nav class="menu-desktop">
+            <ul class="menu">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+        </nav>
+        <nav class="menu-responsive">
+            <button id="open-menu" aria-label="Abrir Menu" onclick="openMenu()"><img src="../assets/icons/open-menu.svg" alt=""></button>
+            <ul id="menu" class="menu">
+                <button id="close-menu" aria-label="Abrir Menu" onclick="closeMenu()"><img src="../assets/icons/close-menu.svg" alt=""></button>
+                <div class="menu-content">
+                    <span class="border"></span>
+                    <li><a onclick="closeMenu()" href="./home.html">Home</a></li>
+                    <span class="border"></span>
+                    <li><a onclick="closeMenu()" href="./about.html">Sobre</a></li>
+                    <span class="border"></span>
+                    <li><a onclick="closeMenu()" href="./contact.html">Contato</a></li>
+                    <span class="border"></span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cards">
+            <div class="card">
+                <div class="content-column-a">
+                    <h2>Guitarra Lp</h2>
+                    <p>(DESCRIÇÃO) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam, quaerat provident perferendis velit a assumenda veritatis ipsum saepe debitis rerum natus nisi magni facere cumque recusandae, neque ipsam corporis.</p>
+                    <a href="#">Botao</a>
+                </div>
+                <div class="content-column-b">
+                    <img src="../assets/img/instruments/lespaul.jpg" alt="imagem de uma guitarra lespaul de cor bege">
+                </div>
+            </div>
+            <div class="card">
+                <div class="content-column-a">
+                    <h2>Guitarra St</h2>
+                    <p>(DESCRIÇÃO) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam, quaerat provident perferendis velit a assumenda veritatis ipsum saepe debitis rerum natus nisi magni facere cumque recusandae, neque ipsam corporis.</p>
+                    <a href="#">Botao</a>
+                </div>
+                <div class="content-column-b">
+                    <img src="../assets/img/instruments/stratocaster.jpg" alt="imagem de uma guitarra stratocaster de cor de madeira">
+                </div>
+            </div>
+            <div class="card">
+                <div class="content-column-a">
+                    <h2>Violão Nylon</h2>
+                    <p>(DESCRIÇÃO) Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam, quaerat provident perferendis velit a assumenda veritatis ipsum saepe debitis rerum natus nisi magni facere cumque recusandae, neque ipsam corporis.</p>
+                    <a href="#">Botao</a>
+                </div>
+                <div class="content-column-b">
+                    <img src="../assets/img/instruments/violao.jpg" alt="imagem de um violão de nylon">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©Kayc. Alguns direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/kaycso" target="_blank"><img src="../assets/icons/github.svg" alt="icone do github"></a>
+            <a href="https://www.linkedin.com/in/kayc-oliveira-3b6456234/" target="_blank"><img src="../assets/icons/linkedin.svg" alt="icone do linkedin"></a>
+        </div>
+    </footer>
+
+    <script src="../script/menu.js"></script>
+</body>
+</html>
