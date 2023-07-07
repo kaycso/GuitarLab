@@ -6,12 +6,19 @@ body {
     position: relative;
 }
 
+.grid {
+    display: grid;
+    min-height: 100vh;
+    gap: 50px;
+}
+
 main {
     display: grid;
 }
 
 .container {
-    margin-block: 110px;
+    margin-top: 110px;
+    margin-inline: 20px;
     display: flex;
     padding: 30px;
     background-color: var(--background-color);
@@ -19,8 +26,6 @@ main {
     justify-content: center;
     justify-self: center;
     gap: 60px;
-    margin-inline: 20px;
-    
 }
 
 #contactLinks {
@@ -143,12 +148,6 @@ main {
     font-weight: 700;
 }
 
-/* footer */
-footer {
-    position: absolute;
-    bottom: 0;
-}
-
 @media (max-width: 650px) {
     .container {
         display: flex;
@@ -169,10 +168,5 @@ footer {
 
     #contactLinks .divisor {
         width: 100%;
-    }
-
-    /* footer */
-    footer {
-        position: relative;
     }
 }
