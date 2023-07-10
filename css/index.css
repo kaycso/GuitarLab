@@ -10,6 +10,7 @@ main {
     display: grid;
     justify-items: center;
     height: 100%;
+    padding: 15px;
 }
 
 .container {
@@ -17,18 +18,25 @@ main {
     align-items: center;
     justify-content: center;
     align-self: center;
+    width: 100%;
     gap: 60px;
 }
 
 .container-content {
     background-color: var(--background-color);
     display: grid;
-    width: 520px;
+    width: 100%;
+    max-width: 520px;
     padding: 55px;
     gap: 40px;
     border-radius: 30px;
 }
 
+.header {
+    text-align: center;
+    display: grid;
+    gap: 5px;
+}
 
 .header h2 {
     color: var(--text-color-1);
@@ -46,15 +54,8 @@ main {
     -webkit-background-clip: text;
 }
 
-.header {
-    text-align: center;
-    display: grid;
-    gap: 5px;
-}
-
 form {
     display: grid;
-    width: 100%;
     gap: 32px;
 }
 
@@ -126,9 +127,14 @@ form button {
 }
 
 @media  (max-width: 600px) {
-    main {
-        padding: 30px;
-        max-width: 320px;
+    .container-content {
+        padding: 40px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 370px) {
+    .container-content {
         gap: 30px;
     }
 
@@ -159,10 +165,12 @@ form button {
 
     form button {
         margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
     }
 
     .singUp p,
     .singUp a {
         font-size: 12px;
     }
-}
+}    
